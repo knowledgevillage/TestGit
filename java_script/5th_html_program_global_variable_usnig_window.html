@@ -1,0 +1,50 @@
+<!--This is html code testing global variable in javascript. Java script have to type of variavle local and global. Here we will disscuss global variable.
+A global variable in java script is declared outside the function or declared with window object. Global variable can be accessed form any function.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test global variable</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var first_var =50;		//global variable
+		
+		function b()
+		{
+			alert(first_var);
+		}
+		
+		function c()
+		{
+			alert(first_var);
+		}
+
+		function d()
+		{
+			var second_var=60;
+			document.writeln(second_var+"<br/>");
+		}
+
+		function e()
+		{
+			window.global_window_variable=100;				//declared a global variable using window
+			document.writeln(global_window_variable+"<br/>");
+		}
+
+		function f()
+		{
+			document.writeln(window.global_window_variable+"<br/>");		// called global variable using window 
+		}
+		b();
+		c();
+		d();
+		e();
+		f();
+
+
+
+	</script>
+
+</body>
+</html>
